@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Roboto;
+  }
+}
+main{
+  @apply grid grid-cols-2 gap-x-24 pt-24 pb-36 relative;
+}
+section {
+  @apply flex flex-col gap-y-[3.125rem];
+}
+article {
+  @apply w-[22rem];
+}
+.caption-section {
+  @apply pb-3;
+}
+.caption-section * {
+  @apply pb-[0.3rem];
+}
+.title{
+  @apply text-primary text-xl leading-6 font-bold;
+  @apply tracking-[0.25em] uppercase mb-[1.125rem];
+}
+.sub-title{
+  @apply text-secondary font-['TimesNewRoman'] text-xl;
+  @apply not-italic font-bold leading-18;
+}
+.caption{
+  @apply text-text text-sm not-italic;
+  @apply font-normal leading-18;
+}
+.caption-Times-New-Roman {
+  @apply font-['TimesNewRoman'];
+}
+.caption-small {
+  @apply text-xs;
+}
+.bold-caption {
+  @apply text-secondary text-sm font-normal;
+  @apply not-italic leading-18;
+}
+.profile-caption {
+  @apply text-base leading-6;
+}
+.social-icon-caption {
+  @apply font-['Inter'] text-xs leading-4;
+}
+.interests-icon-caption {
+  @apply text-xxs leading-18 tracking-widest;
+  @apply uppercase text-center;
+}
+.skills-table td {
+  @apply text-start py-1.5;
+}
+.skills-table tr td:first-child {
+  @apply text-secondary text-sm font-normal;
+  @apply  not-italic leading-18 uppercase w-[7rem];
+}
+.skills-table img {
+  @apply w-44 h-3;
+}
+.skills-table .image {
+  @apply w-44 h-3;
+}
+.interests-table{
+  @apply border-separate border-spacing-3 -ml-3;
+}
+.interests-table .td-content{
+  @apply flex items-center flex-col;
+}
+.interests-table img {
+  @apply w-6 h-6 absolute top-1/2 left-1/2 ;
+  transform: translate(-50%, -50%);
+}
+.interests-table-img-background {
+  @apply bg-background w-12 h-12 rounded-full;
+  @apply relative mb-1.5 mx-1;
+}
+.social-icon {
+  @apply w-3.5 h-3.5;
+}
